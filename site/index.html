@@ -2,18 +2,21 @@
 <html>
 <head>
 	<title>HxTalk</title>
+	<link rel="icon" href="img/hx.png" type="image/png" sizes="16x16">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://simplewebrtc.com/latest-v2.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </head>
-<body>
+<body style="background-color: powderblue">
 	<h1>Create your talkroom</h1>
 	<form id="createRoom">
 		<input type="text" id="sessionInput">
 		<button type="submit">Create</button>
-	</form>
+	</form><br>
 	<div id="roomLink"></div>
-	<video id="localVideo" width="240px"></video>
-	<div id="remotes"></div>
+	<video id="localVideo" muted="true" width="180px" style="border: 2px solid lightgray"></video>
+	<div id="remotes" style="border: 4px solid lightgreen"></div>
+	<div id="disc"></div>
+	<p align="right"><a href="http://10.107.88.100/hiteyadav/HxTalk">Click here for source code</a></p>
 </body>
 </html>
